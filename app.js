@@ -7,7 +7,8 @@ const recognition = new SpeechRecognition();
 const greetings = [
     'do your job',
     'Im good you little homeboi',
-    'leave me alone'
+    'leave me alone',
+    'How are you'
 ]
 
 const weather = [
@@ -34,7 +35,7 @@ btn.addEventListener("click", () => {
 
 function readOutLoud(message) {
 const speech = new SpeechSynthesisUtterance();
-const initiall = ['i dont know You bhosdeekay', 'do your job, you fucking idiot', 'dont waste my time']
+const initiall = ['i dont know You bhosdeekay', 'do your job, you fucking idiot', 'dont waste my time', 'Milind Mohan is Madarchod']
 speech.text = initiall[Math.floor(Math.random()*initiall.length)];
 
 if(message.includes('how are you')){
