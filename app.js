@@ -8,7 +8,8 @@ const greetings = [
     'do your job',
     'Im good you little homeboi',
     'leave me alone',
-    'How are you'
+    'How are you',
+    'Namaste'
 ]
 
 const weather = [
@@ -35,7 +36,7 @@ btn.addEventListener("click", () => {
 
 function readOutLoud(message) {
 const speech = new SpeechSynthesisUtterance();
-const initiall = ['Milind Mohan is Madarchod']
+// const initiall = ['Milind Mohan is Madarchod']
 speech.text = initiall[Math.floor(Math.random()*initiall.length)];
 
 if(message.includes('how are you')){
